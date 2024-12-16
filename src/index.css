@@ -1,0 +1,59 @@
+/* Estilos Globais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body, input, textarea {
+  font: 1em sans-serif;
+  color: #1C1C1C;
+  background-color: #E0E0E0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  padding: 1em;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.budget-total {
+  margin: 2em 1em;
+}
+
+.budget-total h4, h3 {
+  margin: 0.5em 0em;
+}
+
+.construction-page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.construction-page h1, p {
+  margin: 1em;
+}
+
+.construction-img {
+  width: 20em;
+  height: auto;
+  margin: 2em;
+}

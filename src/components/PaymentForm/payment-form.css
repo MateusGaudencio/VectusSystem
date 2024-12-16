@@ -1,0 +1,36 @@
+/* src/components/payment-form.css */
+
+/* Tabela */
+.payment-table {
+    border: 1px solid #1C1C1C;
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+/* Modo Escuro da tabela */
+body.dark-mode {
+    background-color: #5C5C5C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .content,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark .item-table {
+    background-color: #5C5C5C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .container {
+    background-color: #4C4C4C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .payment-table {
+    border: 1px solid #B0B0B0;
+    background-color: #4C4C4C;
+}

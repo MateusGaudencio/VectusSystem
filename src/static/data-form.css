@@ -1,0 +1,31 @@
+/* src/static/data-form.css */
+
+/* Formulário de cadastro das páginas */
+.data-form input, textarea {
+    margin: 1em;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+}
+
+.data-form label {
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+}
+
+.data-form input {
+    font-size: 1em;
+    max-width: 600px;
+}
+
+.data-form textarea {
+    height: 200px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.form-button {
+    margin-top: 5em;
+}

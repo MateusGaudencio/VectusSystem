@@ -1,0 +1,83 @@
+/* src/pages/NewTicket/newticket.css */
+
+.form-newticket label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.form-newticket input, select {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    padding: 1em;
+    font-size: 1em;
+    border: 0;
+    border-radius: 8px;
+    max-width: 400px;
+    background: #E0E0E0;
+}
+
+.form-newticket input[type="radio"]{
+    margin-right: 0.5em;
+}
+
+.form-newticket textarea {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    width: 100%;
+    max-width: 700px;
+    min-width: 150px;
+    min-height: 150px;
+    padding: 1em;
+    font-size: 1.3em;
+    border: 0;
+    border-radius: 8px;
+}
+
+.save-newticket-btn {
+    width: 220px;
+    display: inline-flex;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #1C1C1C;
+    background: #BDF68B;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    margin: 2rem 0.5em;
+}
+
+.new-ticket-page.dark .save-newticket-btn {
+    background: #A3D977;
+}
+  
+.save-newticket-btn:hover, 
+.save-newticket-btn:focus {
+    transform: translateY(-2px);
+    background: #A3D977;
+}
+
+.new-ticket-page.dark
+.save-newticket-btn:hover,
+.save-newticket-btn:focus {
+    background: #B0F68B;
+}
+
+.save-newticket-btn svg {
+    margin-right: 0.5em;
+}
+
+@media screen and (max-width: 1024px) {
+    .form-newticket textarea {
+        max-width: 100%;
+        min-width: unset;
+    }
+}

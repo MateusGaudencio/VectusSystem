@@ -1,0 +1,107 @@
+/* src/static/filter-table.css */
+
+/* Filtro de Busca */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+  
+.filter {
+  display: flex;
+  gap: 0.5em;
+  width: 80%;
+  border-radius: 8px;
+}
+   
+.filter input {
+  color: #1C1C1C;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 8px;
+  font-size: 0.8em;
+  border: 1px solid #C0C0C0;
+}
+
+.filter input::placeholder {
+  color: #1C1C1C;
+}
+
+.filter button {
+  background: #D0D0D0;
+  color: #1C1C1C;
+  max-width: 10em;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 8px;
+  border: 1px solid #C0C0C0;
+  font-size: 0.8em;
+}
+
+.filter button:hover {
+  background: #B0B0B0;
+}
+
+/* Botão de Filtro para telas pequenas*/
+.filter-button {
+  display: none;
+}
+
+/* Mensagem de busca sem resultado */
+.not-search {
+  margin: 1em auto;
+}
+
+/* Modo Escuro do filtro */
+body.dark-mode .filter input,
+body.dark-mode .filter input::placeholder,
+body.dark-mode .filter button,
+body.dark-mode .filter-button {
+  background-color: #3C3C3C;
+  color: #F0F0F0;
+}
+
+body.dark-mode .filter button:hover,
+body.dark-mode .filter-button:hover {
+  background-color: #5C5C5C;
+}
+
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 1500px) {
+
+/* Responsividade do filtro de busca */
+
+  .filter-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 1em;
+  }
+
+  .filter {
+    display: none;
+    width: 100%;
+  }
+
+  .filter-button {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 10em;
+    padding: 0.5em;
+    border-radius: 8px;
+    background: #D0D0D0;
+    color: #1C1C1C;
+    cursor: pointer;
+  }
+
+  .filter-button:hover {
+    background-color: #B0B0B0;
+  }
+
+  .filter.open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}  

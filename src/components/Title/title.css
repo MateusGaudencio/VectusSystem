@@ -1,0 +1,23 @@
+/* src/components/title.css */
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em 0;
+    border-radius: 8px;
+    background-color: #F0F0F0;
+    color: #1C1C1C;
+    padding: 0.8em;
+    padding-left: 1em;
+}
+
+.title span {
+    margin-left: 0.5em;
+    font-size: 1.5em;
+}
+
+/* Estilo para o modo escuro */
+.title.dark {
+    background-color: #4C4C4C;
+    color: #F0F0F0;
+}

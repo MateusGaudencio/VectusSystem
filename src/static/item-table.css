@@ -1,0 +1,136 @@
+/* src/static/item-table.css */
+
+/* Tabela */
+.item-table {
+    border: 1px solid #1C1C1C;
+    margin: 0;
+    padding: 0;
+    width: 85%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.item-table caption {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.75em;
+}
+
+.item-table tr {
+    background-color: #F0F0F0;
+    border: 1px solid #B0B0B0;
+    padding: 0 0.35em;
+}
+
+.item-table tbody tr:hover {
+    background-color: #D3D3D3;
+}
+
+.item-table th, 
+.item-table td {
+    padding: 0.6em;
+    text-align: center;
+}
+
+.item-table th {
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.item-table td .action {
+    border: 0;
+    border-radius: 8px;
+    display: inline-block;
+    align-items: center;
+    margin-right: 3px;
+    background-color: #E68A19;
+    color: #F0F0F0;
+    padding: 0.4em;
+}
+
+.item-table td .action:hover,
+.item-table td .action:focus {
+    transform: scale(1.1);
+}
+
+.item-table td .badge {
+    padding: 0.5em;
+    border-radius: 8px;
+    color: #F0F0F0;
+}
+
+/* Modo Escuro da tabela */
+body.dark-mode {
+    background-color: #5C5C5C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .content,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark .item-table {
+    background-color: #5C5C5C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .container {
+    background-color: #4C4C4C;
+    color: #F0F0F0;
+}
+
+body.dark-mode .item-table {
+    border: 1px solid #B0B0B0;
+    background-color: #4C4C4C;
+}
+
+body.dark-mode .item-table th, 
+body.dark-mode .item-table td {
+    color: #F0F0F0;
+}
+
+body.dark-mode .item-table tr {
+    background-color: #3C3C3C;
+}
+
+body.dark-mode .item-table tbody tr:hover {
+    background-color: #3C3C3C;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 1500px) {
+/* Responsividade da tabela */
+.item-table{
+    border: 0;
+}
+.item-table  caption {
+    font-size: 1.2em;
+}
+.item-table thead {
+    border: none;
+    height: 1px;
+    margin: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.item-table tr {
+    border-bottom: 3px solid #B0B0B0;
+    display: block;
+    margin-bottom: 0.6em;
+}
+.item-table td {
+    border-bottom: 1px solid #B0B0B0;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+}
+.item-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+}

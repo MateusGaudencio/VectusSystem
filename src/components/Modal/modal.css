@@ -1,0 +1,81 @@
+/* src/components/modal.css */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.modal .container {
+    max-width: 800px;
+    max-height: 80vh;
+    width: 100%;
+    background-color: #F0F0F0;
+    box-shadow: 0 0 24px #1C1C1C;
+    padding: 4em 2em;
+    position: relative;
+    overflow-y: auto;
+}
+
+.row {
+    margin-bottom: 1em;
+}
+
+.close-modal-btn {
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal h2 {
+    margin-bottom: 1.2em;
+}
+
+.modal span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.modal span i {
+    font-weight: 400;
+    margin-right: 1em;
+    padding: 2px 8px;
+}
+
+.modal p {
+    padding-top: 0.5em;
+    white-space: pre-wrap;
+    line-height: 150%;
+    word-wrap: break-word;
+}
+
+.badge {
+    padding: 0.5em;
+    border-radius: 8px;
+    color: #F0F0F0;
+}
+
+/* Estilos para o modo escuro */
+.modal.dark .container {
+    background-color: #4C4C4C;
+}
+
+.modal.dark h2, 
+.modal.dark span, 
+.modal.dark p, 
+.modal.dark .badge,
+.modal.dark h3 {
+    color: #F0F0F0;
+}

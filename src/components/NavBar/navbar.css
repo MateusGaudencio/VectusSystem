@@ -1,0 +1,190 @@
+/* src/components/NavBar/navbar.css */
+
+.content { /* Configuração das margens da página */
+    margin-left: 200px;
+    padding: 1em;
+}
+
+.sidebar { /* div que contém todo o conteúdo do menu */
+    margin: 0;
+    padding: 0;
+    background-color: #3C3C3C;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+.menu-toggle {
+    display: none; /* botão de menu em telas pequenas escondido em telas grandes */
+}
+
+.imgNavBarSmallScreen {
+    display: none; /* Imagem de perfil em telas pequenas escondido em telas grandes */
+}
+
+.menu { /* Menu com links para as páginas */
+    background-color: #2C2C2C;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    padding-top: 30px;
+}
+
+.imgNavBar { /* Imagem de perfil em telas grandes */
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 6px #1C1C1C);
+    -webkit-filter: drop-shadow(2px 2px 6px #1C1C1C);
+}
+
+.sidebar a { /* Formatação dos Links */
+    display: block;
+    padding: 12px;
+    display: flex;
+    text-decoration: none;
+    color: #F0F0F0;
+    flex-direction: row;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+}
+
+.sidebar a svg { /* Formatação dos ícones dos links */
+    margin-right: 0.5rem;
+}
+
+.sidebar a:hover { /* Efeito hover dos links */
+    background-color: #1C1C1C;
+    color: #F0F0F0;
+}
+
+.sidebar-bottom-buttons { /* Botões inferiores do menu */
+    position: absolute;
+    padding: 1em;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #2C2C2C;
+}
+
+.sidebar-bottom-buttons a svg { /* Ícones dos botões inferiores */
+    padding: 0;
+    margin: 0;
+}
+
+.darkmode-button,
+.config-button { /* Formatação dos botões inferiores */
+    padding: 1em;
+    margin: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #2C2C2C
+}
+
+.darkmode-button:hover,
+.config-button:hover { /* Efeito do botão modo claro / modo escuro */
+    background-color: #1C1C1C;
+}
+
+@media screen and (max-width: 768px) { /* Configurações para responsividade em telas pequenas */
+
+    .content { /* Configuração das margens da página em telas pequenas */
+        margin-left: 0;
+    }
+
+    .sidebar { /* div que contém todo o conteúdo do menu em telas pequenas */
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar div { /* Formatação geral das dis em telas pequenas */
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .imgNavBarSmallScreen { /* Formatação da imagem de perfil em telas pequenas */
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2em;
+        width: 2em;
+        margin: 1em;
+        border-radius: 50%;
+        object-fit: cover;
+        filter: drop-shadow(2px 2px 6px #1C1C1C);
+        -webkit-filter: drop-shadow(2px 2px 6px #1C1C1C);
+    }
+
+    .imgNavBar { /* Imagem de perfil em telas grandes escondido em telas pequenas */
+        display: none;
+    }
+
+    .menu.open { /* Configuração do botão menu aberto */
+        display: flex; /* Mostrar o menu quando aberto */
+        flex-direction: column; /* Exibir em coluna */
+        border-radius: 8px;
+    }
+    
+    .menu.closed { /* Configuração do botão menu fechado */
+        display: none; /* Esconde menu quando fechado */
+    }
+    
+    .sidebar-bottom-buttons.closed { /* Configuração dos botões inferiores no menu fechado */
+        display: none; /* Esconde botões inferiores quando menu fechado */
+    }
+
+    .menu-toggle { /* Formatação do botão de menu */
+        display: block; /* Mostra o botão em telas pequenas */
+        align-items: center;
+        margin: 1em;
+        padding: 0.75em;
+        border-radius: 8px;
+        background-color: #2C2C2C;
+        color: #F0F0F0;
+        border: none;
+        cursor: pointer;
+    }
+    .menu-toggle:hover { /* Efeito hover do botão de menu */
+        background-color: #5C5C5C;
+    }
+
+    .sidebar a { /* Formatação dos links em telas pequenas */
+        float: none;
+        width: auto;
+        text-align: center;
+        border-radius: 8px;
+        padding: 1em ;
+        margin: 0 1em;
+    }
+
+    .sidebar a:hover { /* Formatação dos botões inferiores em telas pequenas */
+        padding: 1em 2em;
+    }
+
+    .sidebar-bottom-buttons { /* Efeito dos links em telas pequenas */
+        position: static;
+    }
+
+    .sidebar-bottom-buttons button { /* Efeito dos botões inferiores em telas pequenas */
+        margin: 0 1em;
+    }
+
+}

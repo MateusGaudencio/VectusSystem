@@ -1,0 +1,21 @@
+# Explicação dos campos do manifest.json
+
+- "short_name": Nome curto que será exibido, por exemplo, na tela inicial do dispositivo.
+
+- "name": Nome completo do aplicativo que pode aparecer em alguns contextos, como ao adicionar o app à tela inicial.
+
+- "icons": Lista de ícones com diferentes tamanhos e formatos que o navegador usa para representar o aplicativo.
+
+  - "src": Caminho para o arquivo de ícone.
+
+  - "sizes": Tamanhos do ícone, separados por espaços, para diferentes resoluções de dispositivo.
+
+  - "type": Tipo de arquivo de imagem do ícone.
+
+- "start_url": Define a URL inicial do aplicativo quando ele for aberto.
+
+- "display": Define o modo de exibição, como "standalone", que faz o app parecer um aplicativo nativo.
+
+- "theme_color": Cor de destaque usada para definir a aparência do navegador quando o app está em primeiro plano.
+
+- "background_color": Cor de fundo aplicada na tela inicial ao abrir o aplicativo.
