@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { BsFillPersonLinesFill, BsFillPersonPlusFill } from "react-icons/bs";
 import { LuSearch, LuSearchX } from "react-icons/lu";
 import { RiFilterLine, RiFilterFill  } from "react-icons/ri";
+import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function Customers() {
   const [customers, setCustomers] = useState([]);
@@ -223,16 +224,55 @@ export default function Customers() {
               </tbody>
             </table>
 
-            <div className="pagination">
-              {Array.from({ length: Math.ceil(filteredCustomers.length / customersPerPage) }, (_, index) => (
+            <div className={`pagination ${isDarkMode ? 'dark' : ''}`}>
+              {/* Botão para ir à primeira página */}
+              {currentPage > 1 && (
                 <button
-                  key={index}
-                  className={`page-button ${currentPage === index + 1 ? 'active' : ''}`}
-                  onClick={() => handlePageChange(index + 1)}
+                  className="page-button"
+                  onClick={() => handlePageChange(1)}
                 >
-                  {index + 1}
+                  <MdKeyboardDoubleArrowLeft />
                 </button>
-              ))}
+              )}
+
+              {/* Páginas anteriores */}
+              {Array.from({ length: 3 }, (_, i) => currentPage - (3 - i))
+                .filter((page) => page > 0)
+                .map((page) => (
+                  <button
+                    key={page}
+                    className={`page-button ${currentPage === page ? 'active' : ''}`}
+                    onClick={() => handlePageChange(page)}
+                  >
+                    {page}
+                  </button>
+                ))}
+
+              {/* Página atual */}
+              <button className={`page-button active`}>{currentPage}</button>
+
+              {/* Páginas posteriores */}
+              {Array.from({ length: 3 }, (_, i) => currentPage + (i + 1))
+                .filter((page) => page <= Math.ceil(filteredCustomers.length / customersPerPage))
+                .map((page) => (
+                  <button
+                    key={page}
+                    className="page-button"
+                    onClick={() => handlePageChange(page)}
+                  >
+                    {page}
+                  </button>
+                ))}
+
+              {/* Botão para ir à última página */}
+              {currentPage < Math.ceil(filteredCustomers.length / customersPerPage) && (
+                <button
+                  className="page-button"
+                  onClick={() => handlePageChange(Math.ceil(filteredCustomers.length / customersPerPage))}
+                >
+                  <MdKeyboardDoubleArrowRight />
+                </button>
+              )}
             </div>
           </>
         )}

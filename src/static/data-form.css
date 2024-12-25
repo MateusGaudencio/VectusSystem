@@ -1,7 +1,7 @@
 /* src/static/data-form.css */
 
 /* Formulário de cadastro das páginas */
-.data-form input, textarea {
+.data-form input, textarea, select {
     margin: 1em;
     padding: 1em;
     border: none;
@@ -9,15 +9,17 @@
 }
 
 .data-form label {
-    font-size: 1.3em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
+    font-size: 1.5em;
+    margin: 2em 0 0 1em;
 }
 
 .data-form input {
     font-size: 1em;
     max-width: 600px;
+}
+
+.input-quantity {
+    width: 5em;
 }
 
 .data-form textarea {
@@ -28,4 +30,28 @@
 
 .form-button {
     margin-top: 5em;
+}
+
+.suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: -1em 1em 1em 1em;
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+    max-width: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.suggestions li {
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.suggestions li:hover {
+    background-color: #D3D3D3;
+}
+
+.newbudget-services-div {
+    margin: 5em;
 }

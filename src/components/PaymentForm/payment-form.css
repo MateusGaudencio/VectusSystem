@@ -3,11 +3,16 @@
 /* Tabela */
 .payment-table {
     border: 1px solid #1C1C1C;
+    border-radius: 8px;
     margin: 0;
     padding: 0;
     width: 85%;
     table-layout: fixed;
     border-collapse: collapse;
+}
+
+.parcelas-input {
+    width: 5em;
 }
 
 /* Modo Escuro da tabela */

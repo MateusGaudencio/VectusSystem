@@ -293,7 +293,8 @@ export default function NewProduct() {
               title="Nome do Produto"
               type="text" 
               placeholder="Nome do produto" 
-              value={nome} 
+              value={nome}
+              maxLength={100}
               onChange={(e) => setNome(e.target.value)} 
               required 
             />
@@ -345,6 +346,7 @@ export default function NewProduct() {
               type="text"
               placeholder="Marca do Produto"
               value={marca}
+              maxLength={50}
               onChange={(e) => setMarca(e.target.value)}
             />
 
@@ -354,6 +356,7 @@ export default function NewProduct() {
               type="text"
               placeholder="Modelo do Produto"
               value={modelo}
+              maxLength={50}
               onChange={(e) => setModelo(e.target.value)}
             />
 
@@ -363,6 +366,7 @@ export default function NewProduct() {
               type="text"
               placeholder="Distribuidor do Produto"
               value={distribuidor}
+              maxLength={50}
               onChange={(e) => setDistribuidor(e.target.value)}
             />
 
@@ -407,6 +411,7 @@ export default function NewProduct() {
               title="Características do produto"
               placeholder="Características do produto"
               value={caracteristicas}
+              maxLength={500}
               onChange={(e) => setCaracteristicas(e.target.value)}
             />
 
@@ -415,6 +420,7 @@ export default function NewProduct() {
               title="Especificações do produto"
               placeholder="Especificações do produto"
               value={especificacoes}
+              maxLength={500}
               onChange={(e) => setEspecificacoes(e.target.value)}
             />
 
@@ -423,6 +429,7 @@ export default function NewProduct() {
               title="Descrição do produto"
               placeholder="Informações do produto"
               value={info}
+              maxLength={500}
               onChange={(e) => setInfo(e.target.value)}
             />
             <div className="form-button">

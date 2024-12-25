@@ -1,8 +1,10 @@
 /* src/static/table.css */
 
 /* Tabela */
+
 table {
     border: 1px solid #1C1C1C;
+    border-radius: 8px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -91,8 +93,8 @@ table.dark tr {
     background-color: #3C3C3C;
 }
 
-table.dark tbody tr:hover {
-    background-color: #3C3C3C;
+table.dark tr:hover {
+    background-color: #4C4C4C;
 }
 
 /* Responsividade para telas pequenas */

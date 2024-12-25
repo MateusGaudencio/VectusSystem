@@ -13,10 +13,6 @@ button {
     cursor: pointer;
 }
 
-button svg {
-    margin-right: 0.5em;
-}
-
 /* Botão Salvar */
 .save-button, .savemore-button, .save-button-item {
     margin: 1em;
@@ -71,7 +67,7 @@ button svg {
 .delete-button-item {
     margin: 1em;
     padding: 1em;
-    width: 6em;
+    width: 8em;
     background: #FF4C4C;
 }
 
@@ -88,7 +84,7 @@ button svg {
 }
 
 .page-button {
-    width: 25px;
+    width: auto;
     display: flex;
     font-size: 15px;
     color: #1C1C1C;
@@ -101,18 +97,20 @@ button svg {
     padding: 0.5em;
 }
 
-.page-button:hover {
+.page-button:hover,
+.page-button.active {
     background: #C0C0C0;
 }
 
 /* Modo Escuro - Botões de Paginação da Tabela */
-.page-button.dark {
+.pagination.dark .page-button {
     background: #3C3C3C;
     color: #E0E0E0;
 }
 
-.page-button.dark:hover {
-    background: #5C5C5C;
+.pagination.dark .page-button:hover,
+.pagination.dark .page-button.active {
+    background: #4C4C4C;
 }
 
 /* Estilo responsivo para botões */

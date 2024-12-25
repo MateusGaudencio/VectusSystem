@@ -44,9 +44,9 @@
     -webkit-filter: drop-shadow(2px 2px 6px #1C1C1C);
 }
 
-.sidebar a { /* Formatação dos Links */
+.sidebar .menu a { /* Formatação dos Links */
     display: block;
-    padding: 12px;
+    padding: 1em;
     display: flex;
     text-decoration: none;
     color: #F0F0F0;
@@ -55,8 +55,8 @@
     transition: ease-in-out 0.3s;
 }
 
-.sidebar a svg { /* Formatação dos ícones dos links */
-    margin-right: 0.5rem;
+.sidebar .menu a svg { /* Formatação dos ícones dos links */
+    margin-right: 0.5em;
 }
 
 .sidebar a:hover { /* Efeito hover dos links */
@@ -72,26 +72,20 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    text-align: center;
     background-color: #2C2C2C;
-}
-
-.sidebar-bottom-buttons a svg { /* Ícones dos botões inferiores */
-    padding: 0;
-    margin: 0;
 }
 
 .darkmode-button,
 .config-button { /* Formatação dos botões inferiores */
-    padding: 1em;
-    margin: 0;
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    background-color: #2C2C2C
-}
+    background-color: #2C2C2C;
+    align-items: center;
+    justify-content: center;
+} 
 
 .darkmode-button:hover,
 .config-button:hover { /* Efeito do botão modo claro / modo escuro */

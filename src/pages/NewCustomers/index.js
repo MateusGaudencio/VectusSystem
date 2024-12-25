@@ -241,7 +241,8 @@ export default function NewCustomer() {
             <input 
               type="text" 
               placeholder="Nome do cliente" 
-              value={nome} 
+              value={nome}
+              maxLength={100}
               onChange={(e) => setNome(e.target.value)} 
               required 
             />
@@ -311,6 +312,7 @@ export default function NewCustomer() {
               type="text"
               placeholder="Nome da rua"
               value={rua}
+              maxLength={50}
               onChange={(e) => setRua(e.target.value)}
             />
 
@@ -319,6 +321,7 @@ export default function NewCustomer() {
               type="text"
               placeholder="Número"
               value={numero}
+              maxLength={10}
               onChange={(e) => setNumero(e.target.value)}
             />
 
@@ -327,6 +330,7 @@ export default function NewCustomer() {
               type="text"
               placeholder="Complemento"
               value={complemento}
+              maxLength={50}
               onChange={(e) => setComplemento(e.target.value)}
             />
 
@@ -335,6 +339,7 @@ export default function NewCustomer() {
               type="text"
               placeholder="Bairro"
               value={bairro}
+              maxLength={50}
               onChange={(e) => setBairro(e.target.value)}
             />
 
@@ -343,12 +348,14 @@ export default function NewCustomer() {
               type="text"
               placeholder="Cidade"
               value={cidade}
+              maxLength={50}
               onChange={(e) => setCidade(e.target.value)}
             />
             <label>Observação:</label>
             <textarea
               placeholder="Adicione uma observação sobre o cliente"
               value={observacao}
+              maxLength={500}
               onChange={(e) => setObservacao(e.target.value)}
               rows="4"
             />

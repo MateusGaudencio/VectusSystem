@@ -1,0 +1,75 @@
+Paleta de Cores
+-----------------
+// É tentado estabelecer um padrão, no entanto, nada é regra!
+
+Cor de Fundo, inputs e textareas Claro: #E0E0E0
+Cor de Fundo, inputs e textareas Escuro: #5C5C5C
+
+Cor de Texto Claro: #F0F0F0
+Cor de Texto Escuro: #1C1C1C
+
+Cor de Fundo Container Claro: #F0F0F0
+Cor de Fundo Container Escuro: #5C5C5C
+
+Cor de botões de navegação, tabelas e filtros Claro: #4C4C4C
+Cor de botões de navegação, tabelas e filtros Escuro: #3C3C3C
+
+
+-----------------
+
+Mais cores em hexadecimal com suas versões em `rgba` para transparência:
+
+**Paleta de Cores - Tons de Verde**  
+- Verde Neon: `#BDF68B` (rgba(189, 246, 139, 1.0))  
+- Verde Limão: `#A3D977` (rgba(163, 217, 119, 1.0))  
+- Verde Musgo: `#8ECF6B` (rgba(142, 207, 107, 1.0))  
+- Verde Folha: `#76B55A` (rgba(118, 181, 90, 1.0))  
+- Verde Oliva: `#5E9A4B` (rgba(94, 154, 75, 1.0))  
+- Verde Floresta: `#467F3A` (rgba(70, 127, 58, 1.0))  
+
+**Paleta de Cores - Tons de Vermelho**  
+- Vermelho Neon: `#FF6666` (rgba(255, 102, 102, 1.0))  
+- Vermelho Coral: `#FF4C4C` (rgba(255, 76, 76, 1.0))  
+- Vermelho Rubi: `#E53B3B` (rgba(229, 59, 59, 1.0))  
+- Vermelho Escarlate: `#CC3333` (rgba(204, 51, 51, 1.0))  
+- Vermelho Sangue: `#B22A2A` (rgba(178, 42, 42, 1.0))  
+- Vermelho Terra: `#991F1F` (rgba(153, 31, 31, 1.0))  
+
+**Paleta de Cores - Tons de Amarelo e Laranja**
+
+Amarelo Neon: #FFF566 (rgba(255, 245, 102, 1.0))
+Amarelo Canário: #FFEB4C (rgba(255, 235, 76, 1.0))
+Amarelo Ouro: #FFD633 (rgba(255, 214, 51, 1.0))
+Laranja Suave: #FFBF4C (rgba(255, 191, 76, 1.0))
+Laranja Quente: #FF9933 (rgba(255, 153, 51, 1.0))
+Laranja Profundo: #FF8000 (rgba(255, 128, 0, 1.0))
+
+**Azul Escuro (Modo Escuro)**  
+- Azul Noite: `#0A0A2A` (rgba(10, 10, 42, 1.0))  
+- Azul Escuro Suave: `#1B1B3A` (rgba(27, 27, 58, 1.0))  
+- Azul Marinho: `#2C2C52` (rgba(44, 44, 82, 1.0))  
+- Azul Metálico: `#3D3D6B` (rgba(61, 61, 107, 1.0))  
+- Azul Petróleo: `#4E4E83` (rgba(78, 78, 131, 1.0))  
+- Azul Chumbo: `#5F5F9B` (rgba(95, 95, 155, 1.0))  
+
+**Azul Claro (Modo Claro)**  
+- Azul Gelo: `#F0F8FF` (rgba(240, 248, 255, 1.0))  
+- Azul Céu Suave: `#E6F0FF` (rgba(230, 240, 255, 1.0))  
+- Azul Neve: `#CCE0FF` (rgba(204, 224, 255, 1.0))  
+- Azul Cinza Claro: `#B3D1FF` (rgba(179, 209, 255, 1.0))  
+- Azul Pastel: `#99C2FF` (rgba(153, 194, 255, 1.0))  
+- Azul Bebê: `#80B3FF` (rgba(128, 179, 255, 1.0))  
+
+Modo Claro (Mais Claro > Mais Escuro)
+- Branco Suave: #F0F0F0
+- Cinza Claro: #E0E0E0
+- Cinza Prata: #D0D0D0
+- Cinza Nublado: #C0C0C0
+- Cinza Pérola: #B0B0B0
+
+Tons Pretos (Mais Escuro > Mais Claro)
+- Preto Suave: #1C1C1C
+- Cinza Escuro: #2C2C2C
+- Cinza Metálico: #3C3C3C
+- Cinza Chumbo: #4C4C4C
+- Cinza Tempestade: #5C5C5C

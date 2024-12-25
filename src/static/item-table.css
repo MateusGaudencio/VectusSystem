@@ -3,7 +3,7 @@
 /* Tabela */
 .item-table {
     border: 1px solid #1C1C1C;
-    margin: 0;
+    margin: 1em;
     padding: 0;
     width: 85%;
     table-layout: fixed;
@@ -11,7 +11,7 @@
 }
 
 .item-table caption {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0.5em 0 0.75em;
 }
 
@@ -39,7 +39,6 @@
 
 .item-table td .action {
     border: 0;
-    border-radius: 8px;
     display: inline-block;
     align-items: center;
     margin-right: 3px;
@@ -55,7 +54,6 @@
 
 .item-table td .badge {
     padding: 0.5em;
-    border-radius: 8px;
     color: #F0F0F0;
 }
 

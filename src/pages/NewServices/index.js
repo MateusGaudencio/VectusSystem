@@ -162,7 +162,8 @@ export default function NewServices() {
               title="Nome do Serviço"
               type="text" 
               placeholder="Nome do serviço" 
-              value={nome} 
+              value={nome}
+              maxLength={100}
               onChange={(e) => setNome(e.target.value)} 
               required 
             />
@@ -183,6 +184,7 @@ export default function NewServices() {
               type="text"
               placeholder="Informações do serviço"
               value={info}
+              maxLength={50}
               onChange={(e) => setInfo(e.target.value)}
             />
 
